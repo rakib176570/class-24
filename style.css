@@ -1,0 +1,241 @@
+.hader-manu{
+    background: #ddd;
+}
+.navbar {
+    width: 85%;
+    display: flex;
+    margin: auto;
+    /* padding: 10px 0; */
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.manu-logo{
+    width: 120px;
+}
+.home-baton{
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: .6s;
+}
+.navbar ul{
+    text-align: center;
+}
+
+.navbar ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+    text-transform: uppercase;
+
+}
+.navbar ul li::after{
+    content: "";
+    height: 4px;
+    width: 0;
+    position: absolute;
+    background: rgb(250, 7, 7);
+    left: 0;
+    bottom: -40px;
+    transition: .5s;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+    cursor: pointer;
+
+}
+
+/* banar */
+.amar-dash{
+    position: relative;
+    padding-bottom: 40px;
+}
+.img-bagraund1 {
+    bottom: 41px;
+    left: 258px;
+    position: absolute;
+}
+.banar-color{ 
+    background: #EDF6FF;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.banar-text{
+    padding: 150px 0;
+}
+.banar-text a{
+    font-size: 20px;
+    padding: 15px 25px;
+    transition: .6s;
+}
+.banar-text a:hover{
+    background: #fff;
+    color: #5252F0;
+}
+.banar-baton{
+    border-radius: 30px;
+}
+.banar-logo img {
+    max-width: 100%;
+    border-radius: 50%;
+    position: absolute;
+    height: 820px;
+    width: 820px;
+    top: -100px;
+    right: -210px;
+    z-index: -1;
+}
+/* sarvis */
+.sarvis-box{
+   background: #F9FCFF;
+  padding: 20px 30px;
+}
+.line{
+    height: 3px;
+    width: 60px;
+    background: #5252F0;;
+}
+.sarvis-box{
+    transition: .5s;
+    border-radius: 20px;
+    position: relative;
+    
+}
+.img-bagraund {
+    position: absolute;
+    left: -65px;
+    bottom: -46px;
+    z-index: -2;
+}
+.sarvis-box:hover{
+    background: #5252F0;
+    color:#fff;
+    transform: scale(1.05);
+    transition: .5s;
+   
+}
+.sarvis-box:hover span{
+    background-color: #fff;
+    color: #5252F0;
+}
+.sarvis-box:hover h4{
+    color: #fff;
+}
+.sarvis-box:hover p{
+    color: #fff;
+}
+.sarvis-box::after{
+    content: "";
+    bottom: 100px;
+    height: 3px;
+    width: 30px;
+    background: #5252F0;
+    position: absolute;
+    transition: .5s;
+
+}
+.sarvis-box:hover::after{
+    background: rgb(255, 255, 255);
+    height: 3px;
+    width: 70px;
+
+
+}
+.sarvis-box span {
+    font-size: 40px;
+    background: rgb(82, 82, 240);
+    color: rgb(19, 17, 17);
+    border-radius: -43px 9px 0px 1px;
+    display: inline-block;
+    border-radius: 40px 40px 40px 0;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+}
+
+/* banar-imge-play */
+.banar-imge-play{
+ background:linear-gradient(rgba(3, 3, 3, 0.26),rgba(0, 0, 0, 0.356)),url(https://i.ibb.co/k0Lydz2/video-bg.jpg);
+   background-size:cover;
+   background-position: top;
+   width: 100%;
+     padding: 300px 0;
+}
+.last-item{
+    
+}
+.last-item h5{
+    margin-top: 50px;
+}
+.last-item h1{
+    padding: 20px 0;
+}
+.last-item span{
+    font-size: 40px;
+    background: rgb(253, 252, 252);
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    padding-top: 18px;
+    margin-top: 100px;
+    position: relative;
+}
+.last-item span:hover{
+    background: #5252F0;
+
+}
+.last-item span::after{
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid rgb(255, 255, 255);
+    margin: auto;
+    text-align: center;
+    border-radius: 50%;
+    animation: play-bar 3s infinite ease-in-out;
+}
+.last-item span::before {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 5px;
+    left: 5px;
+    border: 1px solid rgb(255, 254, 254);
+    margin: auto;
+    text-align: center;
+    border-radius: 50%;
+    animation: play-bar 3s infinite ease-in-out;
+}
+@keyframes play-bar {
+    0%{
+        transform: scale(1);
+    }
+     50%{
+        transform:  scale(1.5);
+        opacity:.8;
+    }
+    75%{
+        transform:  scale(1.9);
+        opacity:.9;
+    } 
+    100%{
+        transform:  scale(2);
+        opacity: 0;
+    }
+}
